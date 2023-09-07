@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: rgb(176,177,177);
+    background: radial-gradient(circle, rgba(176,177,177,1) 0%, rgba(166,172,165,1) 50%, rgba(255,255,255,1) 100%); */
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+overflow-x: hidden;
+}
+
+.header{
+    color: #fff;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background-color: #fff;
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 30px;
+}
+
+.slack-name{
+    text-align: center;
+    margin: 3rem;
+    font-size: 4rem;
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+}
+
+.profile-picture{
+    border-radius: 20px;
+    margin: 0px auto;
+    place-self: center;
+    max-height: 500px;
+    margin: 0px auto;
+}
+
+.main{
+    padding: 0 20px;
+ }
+
+.day-of-the-week{
+    font-size: 2rem;
+    padding: 10px 0;
+    
+margin: 20px 0;
+font-weight: 800;
+}
+
+.utc-time{
+    font-size: 2rem;
+    margin: 20px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.track{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.click{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+   
+}
+
+.btn{
+    display: flex;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 10px 40px;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    width: 50%;
+}
+.btn:hover{
+   transform: scale(1.2);
+
+}
+
+@media screen and (max-width:1000px) {
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+
+.profile-picture{
+    border-radius: 20px;
+    margin: 0px auto;
+    place-self: center;
+   
+    margin: 0px auto;
+    width: 100%;
+}
+   
+.btn{
+    font-size: 1rem;
+}
+
+}
