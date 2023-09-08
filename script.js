@@ -25,7 +25,7 @@ currentDay.textContent = day;
  document.querySelector('.main').appendChild(currentDay);
 
 
-const time = new Date().toUTCString();
+const time = new Date().getTime();
 utcTime = document.createElement('div');
  utcTime.className = "utc-time";
  utcTime.id = "utc-time";
@@ -56,3 +56,7 @@ githubBtn.textContent = "Click Me";
     window.location.href = "https://github.com/kayswat/ZURI-PROJECT-ONE";
  });
  document.querySelector('.main').appendChild(githubBtn);
+
+
+ const utcMilliseconds = new Date().getTime();
+console.log(utcMilliseconds);
