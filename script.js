@@ -2,7 +2,7 @@
  myName.className = "slack-name";
  myName.id = "slack-name";
  myName.setAttribute('data-testid', 'SlackUserName');
-myName.textContent = "Kazeem Toheeb Abidemi";
+myName.textContent = "Kazeem Toheeb";
  document.querySelector('.header').appendChild(myName);
 
  const displayImage = document.createElement('img');
@@ -21,7 +21,7 @@ let day = days[d.getDay()];
  currentDay.className = "day-of-the-week";
  currentDay.id = "day-of-the-week";
  currentDay.setAttribute('data-testid', 'currentDayOfTheWeek');
-currentDay.textContent = 'Day - ' + day;
+currentDay.textContent = day;
  document.querySelector('.main').appendChild(currentDay);
 
 
@@ -30,14 +30,14 @@ utcTime = document.createElement('div');
  utcTime.className = "utc-time";
  utcTime.id = "utc-time";
  utcTime.setAttribute('data-testid', 'currentUTCTime');
-utcTime.textContent = 'UTC TIME -' + time;
+utcTime.textContent = time;
  document.querySelector('.main').appendChild(utcTime);
 
  const track = document.createElement('div');
  track.className = "track";
  track.id = "track";
  track.setAttribute('data-testid', 'myTrack');
-track.textContent = "Track - Frontend";
+track.textContent = "Frontend";
  document.querySelector('.main').appendChild(track);
 
  const  click= document.createElement('div');
